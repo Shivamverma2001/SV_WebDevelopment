@@ -1,0 +1,122 @@
+h2 {
+    color: indigo;
+    background-color: aliceblue;
+}
+
+button {
+    color: #ff00ff;
+    background-color: antiquewhite;
+}
+
+p {
+    color: rgb(154, 205, 50);
+    background-color: aquamarine;
+    text-align: right;
+    line-height: 2;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: blue underline wavy;
+    letter-spacing: 25px;
+    font-size: xx-large;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    background-color: yellowgreen;
+    color: black;
+}
+
+/*universal selector
+* {
+    background-color: blueviolet;
+}*/
+
+/*element selector
+button {
+    color: #ff00ff;
+    background-color: antiquewhite;
+}*/
+
+/* selector list
+button,a {
+    color: #ff00ff;
+    background-color: antiquewhite;
+}*/
+
+/*id selector*/
+#search {
+    color: blueviolet;
+}
+
+#signup {
+    color: yellow;
+}
+
+/*class selector*/
+.hi {
+    color: blue;
+    background-color: aliceblue;
+    font-size: small;
+}
+
+/*descendant selector*/
+.h button {
+    background-color: black;
+    color: blueviolet;
+}
+
+/*Adjacent Selector  + */
+label+button {
+    background-color: gold;
+}
+
+/*direct decendant selector >*/
+div>a {
+    color: goldenrod;
+}
+
+/*attribute selector*/
+input[type="password"] {
+    color: palevioletred;
+}
+
+p[class="post"] {
+    background-color: maroon;
+}
+
+/*pseudo class*/
+button:hover {
+    background-color: midnightblue;
+}
+
+div button:hover {
+    background-color: springgreen;
+}
+
+div button:active {
+    background-color: rgb(17, 236, 50);
+}
+
+p:nth-of-type(3n) {
+    background-color: darkorange;
+}
+
+/*pseudo elements*/
+h2::first-letter {
+    font-size: 100px;
+}
+
+h2::first-line {
+    background-color: brown;
+}
+
+p::selection {
+    background-color: rgb(29, 197, 219);
+}

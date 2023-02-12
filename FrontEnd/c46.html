@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <p>
+            <label for="name">Name</label>
+            <input type="text" name="username" id="name" placeholder="username">
+        </p>
+        <p>
+            <label for="pass">Password</label>
+            <input type="password" name="password" id="pass" placeholder="password">
+        </p>
+        <p>
+            <label for="col">Color</label>
+            <input type="color" name="Color" id="col">
+        </p>
+        <p>
+            <label for="num">Number</label>
+            <input type="number" name="number" id="num" min="10" max="100" step="4" placeholder="number input">
+        </p>
+        <p>
+        <h2>Agree or not</h2>
+        <div>
+            <input type="checkbox" name="" id="c1">
+            <label for="c1">I agree in everything</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="c2">
+            <label for="c2">I disagree in everything</label>
+        </div>
+        </p>
+        <p>
+        <h2>Agree or not</h2>
+        <div>
+            <input type="radio" name="agr" id="r1" value="agree">
+            <label for="r1">I agree in everything</label>
+        </div>
+        <div>
+            <input type="radio" name="agr" id="r2" value="disagree">
+            <label for="r2">I disagree in everything</label>
+        </div>
+        </p>
+        <p>
+            <label for="meal">Please select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="chicken">Chicken</option>
+                <option value="paneer" selected>Paneer</option>
+                <option value="no thing">No thing</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" name="cheese" value="2" id="cheese" min="1" max="10" step="2">
+        </p>
+        <p>
+            <label for="area">Any special request</label>
+            <textarea name="text" id="area" cols="30" rows="10" placeholder="Type here something? "></textarea>
+        </p>
+        <p>
+            <label for="tim">Time</label>
+            <br>
+            <input type="time" name="time" id="tim">
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

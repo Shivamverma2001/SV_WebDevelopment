@@ -1,0 +1,40 @@
+h1 {
+    background-color: rgb(9, 233, 43);
+    border: 5px solid black;
+    color: white;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+    background-color: blueviolet;
+}
+
+h1:nth-of-type(3n) {
+    background-color: rgb(34, 178, 226);
+}
+
+h1:nth-of-type(4n) {
+    background-color: rgb(226, 195, 43);
+}
+
+section:first-of-type h1:nth-of-type(1) {
+    transform: rotate(45deg);
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    transform: scale(0.7);
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    transform: translateX(200px);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2) {
+    transform: scaleX(30deg);
+}

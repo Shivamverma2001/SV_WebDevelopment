@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <button type="button"> Please do not submit the button</button>
+        <p>
+            <label for="username">Enter a username</label>
+            <input type="text" placeholder="username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password</label>
+            <input type="password" placeholder="enter your password" id="password" name="password">
+        </p>
+        <button>In the middle</button>
+        <p>
+            <label for="color">Pick a color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="month">Enter month</label>
+            <input type="month" id="month" name="month">
+        </p>
+        <p>
+            <label for="number">Enter a number</label>
+            <input type="number" pattern="enter the number" min="1" max="100" id="number" name="number">
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+            <input type="submit" value="Click me">
+        </p>
+    </form>
+    <hr>
+
+    <button>Not inside form</button>
+    <h2>Hijacking Searches
+    </h2>
+    <h3>Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search youtube</button>
+    </form>
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agreee_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="extra size">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="large size">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="medium size">
+        </p>
+        <p>
+            <label for="meal">Please select an Entree
+            </label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="vegetarian" selected>vegetarian</option>
+                <option value="Stick">Stick</option>
+            </select>
+        </p>
+        <p>
+            <label for="range">Amount of cheese</label>
+            <input type="range" id="range" min="0" value="75" max="10" name="range_val">
+
+        </p>
+        <p>
+            <label for="request">Any special request</label>
+            <br>
+            <textarea name="requests?" id="tequests" cols="30" rows="10" placeholder="type your rewuests"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <h2>Validatons demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter first name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <input type="email" name="" id="" required>
+            <input type="url" name="" id="" required>
+        </p>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>

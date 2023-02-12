@@ -1,0 +1,1 @@
+const data = `{ "ticket": { "base": "BTC", "target": "USD", "price": "11288.4913464", "volume": "91769.696699773", "change": "-46.29462447" }, "timestamp": "1596510482", "success": true, "error": "" }`
